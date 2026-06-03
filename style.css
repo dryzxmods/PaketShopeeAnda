@@ -339,3 +339,80 @@ body {
 .footer .desc {
   color: #888;
 }
+
+/* ================= MOBILE RESPONSIVE ================= */
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+
+  .container {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .header {
+    height: auto;
+    min-height: 130px;
+    padding-bottom: 15px;
+  }
+
+  .wrap-navbar-input {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .icon-shop {
+    width: 35px;
+    height: 35px;
+    margin-left: 10px;
+  }
+
+  .brand-img {
+    width: 35px;
+    height: 45px;
+  }
+
+  .text-brand {
+    font-size: 20px;
+  }
+
+  .under-input {
+    display: none;
+  }
+
+  .content {
+    top: 180px;
+  }
+
+  .card-kategory {
+    width: 25%;
+    height: auto;
+    min-height: 120px;
+  }
+
+  .card-pencarian {
+    width: 50%;
+  }
+
+  .row-card {
+    height: auto;
+  }
+
+  .wrap-img-sale {
+    width: 100%;
+    height: auto;
+  }
+
+  .diskon {
+    width: 45px;
+    height: 45px;
+  }
+
+  .footer {
+    top: 120px;
+  }
+}
