@@ -417,71 +417,124 @@ img {
   }
 }
 
-/* ===== FIX ANTI GEPENG MOBILE ===== */
-@media (max-width: 768px){
+/* ===== MOBILE FRIENDLY REBUILD ===== */
+@media (max-width:768px){
 
-  .wrap-carousel{
-    height:auto !important;
-  }
+.header{
+  position:relative;
+  height:auto;
+  min-height:auto;
+  padding:10px;
+}
 
-  .wrap-carousel .col-8,
-  .wrap-carousel .col-4{
-    flex:0 0 100% !important;
-    max-width:100% !important;
-    padding:0 !important;
-  }
+.content{
+  top:0 !important;
+}
 
-  .wrap-carousel img,
-  .carousel-item img{
-    width:100% !important;
-    height:auto !important;
-    object-fit:cover;
-  }
+.navbar{
+  flex-direction:column;
+  align-items:flex-start !important;
+  gap:8px;
+}
 
-  .jenis-sale > div,
-  .kategory > div,
-  .d-flex.w-100.pt-3{
-    flex-wrap:wrap !important;
-  }
+.navbar > div{
+  flex-wrap:wrap;
+}
 
-  .card-kategory{
-    width:50% !important;
-  }
+.wrap-navbar-input{
+  width:100% !important;
+  margin:15px 0 0 0 !important;
+}
 
-  .card-pencarian{
-    width:100% !important;
-  }
+.under-input{
+  display:flex !important;
+  flex-wrap:wrap;
+  gap:8px;
+}
 
-  .col-2{
-    flex:0 0 50% !important;
-    max-width:50% !important;
-    margin-bottom:10px;
-  }
+.under-input span{
+  margin-right:0 !important;
+}
 
-  .col-3{
-    flex:0 0 50% !important;
-    max-width:50% !important;
-  }
+.icon-shop{
+  display:none;
+}
 
-  .col-4{
-    flex:0 0 100% !important;
-    max-width:100% !important;
-  }
+.wrap-carousel{
+  height:auto !important;
+}
 
-  .row[style*="height: 200px"],
-  .row[style*="height: 300px"],
-  .row[style*="height: 500px"]{
-    height:auto !important;
-  }
+.wrap-carousel .col-8,
+.wrap-carousel .col-4{
+  max-width:100%;
+  flex:0 0 100%;
+  padding:0 !important;
+}
 
-  .h-100,
-  .h-75,
-  .h-50{
-    height:auto !important;
-  }
+.wrap-carousel img,
+.carousel-item img{
+  width:100%;
+  height:auto !important;
+  object-fit:cover;
+}
 
-  .wrap-img-sale img,
-  .wrap-img img{
-    object-fit:contain;
-  }
+.jenis-sale > div,
+.kategory > div,
+.d-flex.w-100.pt-3{
+  flex-wrap:wrap;
+}
+
+.jenis-sale .d-flex.flex-column{
+  width:20%;
+  margin-bottom:12px;
+}
+
+.card-kategory{
+  width:50% !important;
+}
+
+.card-pencarian{
+  width:100% !important;
+}
+
+.col-2{
+  max-width:50%;
+  flex:0 0 50%;
+}
+
+.col-3{
+  max-width:50%;
+  flex:0 0 50%;
+}
+
+.col-4,
+.col-8{
+  max-width:100%;
+  flex:0 0 100%;
+}
+
+.row-card,
+.row[style*="height"],
+div[style*="height: 500px"],
+div[style*="height: 300px"],
+div[style*="height: 200px"]{
+  height:auto !important;
+}
+
+.h-100,.h-75,.h-50{
+  height:auto !important;
+}
+
+.carousel-control-prev,
+.carousel-control-next{
+  display:none;
+}
+
+.shape1,.shape2,.shape3,.shape4{
+  display:none;
+}
+
+body{
+  overflow-x:hidden;
+}
 }
